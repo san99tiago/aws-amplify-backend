@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifypoc-dev-95626-authRole",
+      "UnauthRoleArn": "arn:aws:iam::146184342449:role/amplify-amplifypoc-dev-95626-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::146184342449:role/amplify-amplifypoc-dev-95626-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifypoc-dev-95626-deployment",
+      "UnauthRoleName": "amplify-amplifypoc-dev-95626-unauthRole",
+      "StackName": "amplify-amplifypoc-dev-95626",
+      "StackId": "arn:aws:cloudformation:us-east-1:146184342449:stack/amplify-amplifypoc-dev-95626/3faf9d10-bd24-11ee-8425-0e1bb21abc4b",
+      "AmplifyAppId": "d150idvqhpijyu"
+    },
+    "categories": {
+      "api": {
+        "amplifypoc": {}
+      },
+      "function": {
+        "fnexample": {
+          "santi": "GARCIA",
+          "deploymentBucketName": "amplify-amplifypoc-dev-95626-deployment",
+          "s3Key": "amplify-builds/fnexample-35424e52496269694757-build.zip"
+        }
+      },
+      "auth": {
+        "amplifypoc14e7efd6": {}
+      },
+      "storage": {
+        "s3data": {}
+      }
+    }
+  }
+}

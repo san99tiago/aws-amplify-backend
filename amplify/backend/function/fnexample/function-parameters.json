@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "api": {
+      "amplifypoc": [
+        "Query"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "santi",
+      "environmentVariableName": "SANTI"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "resourceName": "s3data",
+  "policyUUID": "8ae3f58c",
+  "bucketName": "amplify-poc-bucket-santi-test",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

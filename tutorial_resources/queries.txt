@@ -1,0 +1,34 @@
+
+1.- product hasMany Orders
+
+query GetProductOrders {
+    getProduct(id: "yeezyboost") {
+        orders {
+            items {
+                id
+                date
+                amount
+                status
+            }
+        }
+        name
+	}
+}
+
+
+2.- customer ordersByDate
+
+query customerOrdersByDate {
+    getCustomer(id: "jennifer_thomas") {
+        ordersByDate(date: {between: [ "2018-01-22", "2020-10-11" ]}) {
+            items {
+                amount
+                date
+                id
+                status
+            }
+        }
+    phoneNumber
+    name
+    }
+}

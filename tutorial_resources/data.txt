@@ -1,0 +1,99 @@
+# first
+mutation createWarehouse {
+  createWarehouse(input: {id: "1"}) {
+    id
+  }
+}
+
+# second
+mutation createEmployee {
+  createEmployee(input: {
+    id: "amanda"
+    name: "Amanda",
+    startDate: "2018-05-22",
+    phoneNumber: "6015555555",
+    warehouseID: "1",
+    jobTitle: "Manager",
+    newHire: "true"}
+  ) {
+    id
+    jobTitle
+    name
+    newHire
+    phoneNumber
+    startDate
+    warehouseID
+  }
+}
+
+# third
+mutation createAccountRepresentative {
+  createAccountRepresentative(input: {
+    id: "dabit"
+    orderTotal: 400000
+    salesPeriod: "January 2019"
+  }) {
+    id
+    orderTotal
+    salesPeriod
+  }
+}
+
+# fourth
+mutation createCustomer {
+  createCustomer(input: {
+    id: "jennifer_thomas"
+    accountRepresentativeID: "dabit"
+    name: "Jennifer Thomas"
+    phoneNumber: "+16015555555"
+  }) {
+    id
+    name
+    accountRepresentativeID
+    phoneNumber
+  }
+}
+
+# fifth
+mutation createProduct {
+  createProduct(input: {
+    id: "yeezyboost"
+    name: "Yeezy Boost"
+  }) {
+    id
+    name
+  }
+}
+
+# sixth
+mutation createInventory {
+  createInventory(input: {
+    productID: "yeezyboost"
+    warehouseID: "1"
+    inventoryAmount: 300
+  }) {
+    productID
+    inventoryAmount
+    warehouseID
+  }
+}
+
+# seventh
+mutation createOrder {
+  createOrder(input: {
+    amount: 300
+    date: "2018-07-12"
+    status: "pending"
+    accountRepresentativeID: "dabit"
+    customerID: "jennifer_thomas"
+    productID: "yeezyboost"
+  }) {
+    id
+    customerID
+    accountRepresentativeID
+    amount
+    date
+    customerID
+    productID
+  }
+}
